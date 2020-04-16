@@ -45,5 +45,5 @@ class ModelWrapper(MAXModelWrapper):
         return x
 
     def _predict(self, x):
-        text = tesserocr.image_to_text(x.convert('L'), lang='eng')
+        text = tesserocr.image_to_text(x.convert('L'), lang='fra')
         return text
